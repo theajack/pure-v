@@ -1,0 +1,24 @@
+{
+  "name": "pure-v",
+  "version": "1.0.1",
+  "description": "A pure and independent js validation plugin for any scene or framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theajack/pure-v.git"
+  },
+  "keywords": [
+    "validation",
+    "plugin",
+    "js"
+  ],
+  "author": "theajack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theajack/pure-v/issues"
+  },
+  "homepage": "https://github.com/theajack/pure-v#readme"
+}
