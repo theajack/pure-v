@@ -30,9 +30,9 @@ npm i pure-v
 Quote:
 
 ```
-var purev = require('purev')
+var purev = require('pure-v')
 //or
-import purev from 'purev'
+import purev from 'pure-v'
 ```
 
 #### 1.3 Examples
@@ -50,8 +50,8 @@ Birthday:<input type="text" pv-rule='date'><br><br>
 ##### 1.3.2 Verifying a value or a json object
 
 ```
-var purev = require('purev')
-//or import purev from 'purev'
+var purev = require('pure-v')
+//or import purev from 'pure-v'
 // Use the script tag to introduce will generate a global purev object
 
 purev('2018-09-09','email')
@@ -90,7 +90,7 @@ purev({
 ##### 1.3.3 Configuration Information Code
 
 ```
-var purev = require('purev')
+var purev = require('pure-v')
 purev.toast=null //Disable the default prompt method
 purev.onOnePass=function(a1,a2){
 	console.log(a1,a2)
@@ -240,9 +240,9 @@ npm i pure-v
 引用：
 
 ```
-var purev = require('purev')
+var purev = require('pure-v')
 //or
-import purev from 'purev'
+import purev from 'pure-v'
 ```
 
 #### 1.3 示例
@@ -260,7 +260,7 @@ import purev from 'purev'
 ##### 1.3.2 验证一个值或一个json对象
 
 ```
-var purev = require('purev')
+var purev = require('pure-v')
 //使用script标签引入会生成一个全局的purev对象
 
 purev('2018-09-09','email')
@@ -300,7 +300,7 @@ purev({
 ##### 1.3.3 配置信息代码
 
 ```
-var purev = require('purev')
+var purev = require('pure-v')
 purev.toast=null //禁用默认的提示方法
 purev.onOnePass=function(a1,a2){
 	console.log(a1,a2)

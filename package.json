@@ -1,6 +1,6 @@
 {
   "name": "pure-v",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A pure and independent js validation plugin for any scene or framework.",
   "main": "index.js",
   "scripts": {
