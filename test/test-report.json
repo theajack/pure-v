@@ -1,0 +1,340 @@
+{
+    "passed": true,
+    "time": 2,
+    "results": [
+        {
+            "result": {
+                "pass": false,
+                "message": "",
+                "results": {
+                    "name": {
+                        "pass": true,
+                        "message": "",
+                        "text": "theajack",
+                        "name": "name"
+                    },
+                    "birthday": {
+                        "pass": true,
+                        "message": "",
+                        "text": "1994-01-01",
+                        "name": "birthday"
+                    },
+                    "email": {
+                        "pass": true,
+                        "message": "",
+                        "text": "me@theajack.com",
+                        "name": "email"
+                    },
+                    "intro": {
+                        "pass": false,
+                        "message": "required",
+                        "text": "",
+                        "name": "intro"
+                    }
+                }
+            },
+            "expect": {
+                "pass": false,
+                "message": "",
+                "results": {
+                    "name": {
+                        "pass": true,
+                        "message": "",
+                        "text": "theajack",
+                        "name": "name"
+                    },
+                    "birthday": {
+                        "pass": true,
+                        "message": "",
+                        "text": "1994-01-01",
+                        "name": "birthday"
+                    },
+                    "email": {
+                        "pass": true,
+                        "message": "",
+                        "text": "me@theajack.com",
+                        "name": "email"
+                    },
+                    "intro": {
+                        "pass": false,
+                        "message": "required",
+                        "text": "",
+                        "name": "intro"
+                    }
+                }
+            },
+            "passed": true,
+            "index": 0,
+            "time": 0,
+            "name": "测试验证json"
+        },
+        {
+            "result": [
+                {
+                    "pass": false,
+                    "message": "required",
+                    "text": "",
+                    "name": "intro"
+                }
+            ],
+            "expect": [
+                {
+                    "pass": false,
+                    "message": "required",
+                    "text": "",
+                    "name": "intro"
+                }
+            ],
+            "passed": true,
+            "index": 1,
+            "time": 1,
+            "name": "测试验证onOneFail"
+        },
+        {
+            "result": [
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "2020-01-02"
+                },
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "theajack",
+                    "name": "name"
+                },
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "1994-01-01",
+                    "name": "birthday"
+                },
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "me@theajack.com",
+                    "name": "email"
+                }
+            ],
+            "expect": [
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "2020-01-02"
+                },
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "theajack",
+                    "name": "name"
+                },
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "1994-01-01",
+                    "name": "birthday"
+                },
+                {
+                    "pass": true,
+                    "message": "",
+                    "text": "me@theajack.com",
+                    "name": "email"
+                }
+            ],
+            "passed": true,
+            "index": 2,
+            "time": 0,
+            "name": "测试验证onOnePass"
+        },
+        {
+            "result": [
+                true,
+                false,
+                false,
+                true,
+                true,
+                false
+            ],
+            "expect": [
+                true,
+                false,
+                false,
+                true,
+                true,
+                false
+            ],
+            "passed": true,
+            "index": 3,
+            "time": 0,
+            "name": "测试自定义规则"
+        },
+        {
+            "result": {
+                "notnull": [
+                    false,
+                    true
+                ],
+                "date": [
+                    false,
+                    true,
+                    false
+                ],
+                "email": [
+                    true,
+                    false
+                ],
+                "number": [
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true
+                ],
+                "idcard": [
+                    true,
+                    true,
+                    false
+                ],
+                "length": [
+                    true,
+                    false,
+                    true
+                ],
+                "url": [
+                    true,
+                    true,
+                    false
+                ],
+                "decimal": [
+                    true,
+                    true,
+                    false,
+                    true
+                ],
+                "lengthOfAny": [
+                    true,
+                    true,
+                    false
+                ],
+                "phone": [
+                    true,
+                    false,
+                    false
+                ],
+                "letterStart": [
+                    true,
+                    true,
+                    true,
+                    false
+                ],
+                "range": [
+                    false,
+                    true,
+                    true,
+                    false
+                ],
+                "express": [
+                    true,
+                    false,
+                    false
+                ],
+                "withNull": [
+                    true,
+                    false,
+                    true
+                ]
+            },
+            "expect": {
+                "notnull": [
+                    false,
+                    true
+                ],
+                "date": [
+                    false,
+                    true,
+                    false
+                ],
+                "email": [
+                    true,
+                    false
+                ],
+                "number": [
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true
+                ],
+                "idcard": [
+                    true,
+                    true,
+                    false
+                ],
+                "length": [
+                    true,
+                    false,
+                    true
+                ],
+                "url": [
+                    true,
+                    true,
+                    false
+                ],
+                "decimal": [
+                    true,
+                    true,
+                    false,
+                    true
+                ],
+                "lengthOfAny": [
+                    true,
+                    true,
+                    false
+                ],
+                "phone": [
+                    true,
+                    false,
+                    false
+                ],
+                "letterStart": [
+                    true,
+                    true,
+                    true,
+                    false
+                ],
+                "range": [
+                    false,
+                    true,
+                    true,
+                    false
+                ],
+                "express": [
+                    true,
+                    false,
+                    false
+                ],
+                "withNull": [
+                    true,
+                    false,
+                    true
+                ]
+            },
+            "passed": true,
+            "index": 4,
+            "time": 1,
+            "name": "测试验证文本"
+        },
+        {
+            "result": "自定义日期提示",
+            "expect": "自定义日期提示",
+            "passed": true,
+            "index": 5,
+            "time": 0,
+            "name": "测试自定义提示"
+        }
+    ]
+}

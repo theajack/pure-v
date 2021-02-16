@@ -1,0 +1,26 @@
+
+测试结果: 通过
+测试用例数: 6
+总耗时: 2ms
+----------------------------
+测试用例详细数据:
+----------------------------
+【测试验证json】: 通过 / 0ms
+输出结果: {"pass":false,"message":"","results":{"name":{"pass":true,"message":"","text":"theajack","name":"name"},"birthday":{"pass":true,"message":"","text":"1994-01-01","name":"birthday"},"email":{"pass":true,"message":"","text":"me@theajack.com","name":"email"},"intro":{"pass":false,"message":"required","text":"","name":"intro"}}}
+
+【测试验证onOneFail】: 通过 / 1ms
+输出结果: [{"pass":false,"message":"required","text":"","name":"intro"}]
+
+【测试验证onOnePass】: 通过 / 0ms
+输出结果: [{"pass":true,"message":"","text":"2020-01-02"},{"pass":true,"message":"","text":"theajack","name":"name"},{"pass":true,"message":"","text":"1994-01-01","name":"birthday"},{"pass":true,"message":"","text":"me@theajack.com","name":"email"}]
+
+【测试自定义规则】: 通过 / 0ms
+输出结果: [true,false,false,true,true,false]
+
+【测试验证文本】: 通过 / 1ms
+输出结果: {"notnull":[false,true],"date":[false,true,false],"email":[true,false],"number":[true,true,false,false,true,false,true],"idcard":[true,true,false],"length":[true,false,true],"url":[true,true,false],"decimal":[true,true,false,true],"lengthOfAny":[true,true,false],"phone":[true,false,false],"letterStart":[true,true,true,false],"range":[false,true,true,false],"express":[true,false,false],"withNull":[true,false,true]}
+
+【测试自定义提示】: 通过 / 0ms
+输出结果: "自定义日期提示"
+
+

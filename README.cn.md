@@ -14,32 +14,32 @@
     <a href="https://github.com/theajack/pure-v/issues"><img src="https://img.shields.io/github/issues-closed/theajack/pure-v.svg" alt="issue"></a>
     <a href="https://github.com/theajack/pure-v/blob/master/test/test-report.txt"><img src="https://img.shields.io/badge/test-passed-44BB44" alt="test"></a>
 </p>
-<h3>🚀 Lightweight and extensible pure js verification plugin</h3>
+<h3>🚀 轻量级、可扩展的纯粹的js验证插件</h3>
 
-**[English](https://github.com/theajack/pure-v/blob/master/README.md) | [Update Log](https://github.com/theajack/pure-v/blob/ master/helper/version.md) | [Feedback bug/missing](https://github.com/theajack/pure-v/issues/new) | [Gitee](https://gitee.com/theajack/pure -v)**
+**[English](https://github.com/theajack/pure-v/blob/master/README.md) | [更新日志](https://github.com/theajack/pure-v/blob/master/helper/version.md) | [反馈错误/缺漏](https://github.com/theajack/pure-v/issues/new) | [Gitee](https://gitee.com/theajack/pure-v)**
 
 ---
 
-### 1. Features
+### 1. 特性
 
-1. Typescript writing
-2. Multi-terminal support
-3. Customize validation rules and error prompts
-4. Support dom element binding
-5. Small size, easy to use
+1. typescript 编写
+2. 多端支持
+3. 自定义验证规则、错误提示
+4. 支持dom元素绑定
+5. 体积小巧，简单易用
 
-### 2. Quick use
+### 2. 快速使用
 
-#### 2.1 npm installation
+#### 2.1 npm 安装
 
 ```
 npm i pure-v
 ```
 
 ```js
-import purev from'pure-v';
+import purev from 'pure-v';
 
-purev('2020-01-01','date');
+purev('2020-01-01', 'date');
 ```
 
 #### 2.2 cdn
@@ -48,7 +48,7 @@ purev('2020-01-01','date');
 ```html
 <script src="https://cdn.jsdelivr.net/npm/pure-v/purev.min.js"></script>
 <script>
-    purev('2020-01-01','date');
+    purev('2020-01-01', 'date');
 </script>
 ```
 
@@ -69,31 +69,31 @@ interface IPureV {
 }
 ```
 
-#### 3.1 Verification text
+#### 3.1 验证文本
 
 ```js
-purev('2020-01-02','date')
+purev('2020-01-02', 'date')
 ```
 
 
-#### 3.2 Verify json
+#### 3.2 验证json
 
 ```js
 purev({
-    name:'theajack',
+    name: 'theajack',
     birthday: '1994-01-01',
-    email:'me@theajack.com',
-    intro:''
+    email: 'me@theajack.com',
+    intro: ''
 }, {
-    name:'notnull',
-    birthday:'date',
-    email:'email',
-    intro:'notnull'
+    name: 'notnull',
+    birthday: 'date',
+    email: 'email',
+    intro: 'notnull'
 });
 ```
 
 
-#### 3.3 Binding DOM
+#### 3.3 绑定DOM
 
 ```html
 <div pv-form='form'>
@@ -108,42 +108,42 @@ purev({
 </script>
 ```
 
-Support the use of pv-form attributes, css selectors, or dom elements
+支持使用 pv-form 属性，css选择器，或dom元素
 
-When the element has the pv-rule attribute, only the current element is verified, otherwise, all child elements that contain the pv-rule attribute are verified
+当元素有 pv-rule 属性时，则只验证当前元素，否则验证该元素所有含有 pv-rule 属性的子元素
 
-Has the following properties
+有以下属性
 
-1. pv-form form to be validated
-2. pv-rule validation rules
-3. pv-name gives the verification content a name
-4. pv-attr is used to obtain the verified text, the default value is value, and the optional values ​​are value, text, html, src, href
-5. pv-res When the verification fails, the verification dom element will have pv-res=fail
+1. pv-form 待验证的表单
+2. pv-rule  验证规则
+3. pv-name 给验证内容起一个名称
+4. pv-attr 用于获取验证的文本，默认值为 value, 可选值有 value, text, html, src, href
+5. pv-res 当验证失败时，验证dom元素 会带有 pv-res=fail
 
-### 4. Custom rules
+### 4. 自定义规则
 
 ```js
 purev.reg('custom', /^\d{3,4}$/);
 purev.reg('customFn', (v) => {
-    return v ==='purev' || v ==='PUREV';
+    return v === 'purev' || v === 'PUREV';
 });
 
-purev('123','custom').pass,
-purev('aaa','custom').pass,
-purev('12345','custom').pass,
-purev('purev','customFn').pass,
-purev('PUREV','customFn').pass,
-purev('xxxxx','custom').pass,
+purev('123', 'custom').pass,
+purev('aaa', 'custom').pass,
+purev('12345', 'custom').pass,
+purev('purev', 'customFn').pass,
+purev('PUREV', 'customFn').pass,
+purev('xxxxx', 'custom').pass,
 ```
 
-### 5. Custom error prompt
+### 5. 自定义错误提示
 
 ```js
-purev.tip('date','Custom Date Tip');
-purev('xxx','date').message;
+purev.tip('date', '自定义日期提示');
+purev('xxx', 'date').message;
 ```
 
-### 6. Success and failure monitoring
+### 6. 成功和失败监听
 
 ```js
 purev.onOnePass = (result) => {
@@ -154,112 +154,112 @@ purev.onOneFail = (result) => {
 };
 ```
 
-onOnePass and onOneFail are singleton mode, if you need to set, please directly override these two attributes
+onOnePass 和 onOneFail 为单例模式，如需设置请直接覆盖这两个属性
 
-### 7 Usage examples
+### 7 使用实例
 
 ```js
 const result = {
     notnull: [
-        purev('','notnull').pass,
-        purev('xx','notnull').pass,
+        purev('', 'notnull').pass,
+        purev('xx', 'notnull').pass,
     ],
     date: [
-        purev('xx','date').pass,
-        purev('2020-01-02','date').pass,
-        purev('2020-13-02','date').pass,
+        purev('xx', 'date').pass,
+        purev('2020-01-02', 'date').pass,
+        purev('2020-13-02', 'date').pass,
     ],
     email: [
-        purev('theajack@qq.com','email').pass,
-        purev('xx','email').pass,
+        purev('theajack@qq.com', 'email').pass,
+        purev('xx', 'email').pass,
     ],
     number: [
-        purev('1','number').pass,
-        purev('12','number').pass,
-        purev('12.3a','number').pass,
-        purev('a12.3','number').pass,
-        purev('123','number[3]').pass,
-        purev('1234','number[3]').pass,
-        purev('12345','number[3,6]').pass,
+        purev('1', 'number').pass,
+        purev('12', 'number').pass,
+        purev('12.3a', 'number').pass,
+        purev('a12.3', 'number').pass,
+        purev('123', 'number[3]').pass,
+        purev('1234', 'number[3]').pass,
+        purev('12345', 'number[3,6]').pass,
     ],
     idcard: [
-        purev('340827111111111111','idcard').pass,
-        purev('34082711111111111X','idcard').pass,
-        purev('3408271111111111111','idcard').pass,
+        purev('340827111111111111', 'idcard').pass,
+        purev('34082711111111111X', 'idcard').pass,
+        purev('3408271111111111111', 'idcard').pass,
     ],
     length: [
-        purev('123456','length[6]').pass,
-        purev('1234你好','length[6]').pass,
-        purev('1234567','length[6,9]').pass,
+        purev('123456', 'length[6]').pass,
+        purev('1234你好', 'length[6]').pass,
+        purev('1234567', 'length[6,9]').pass,
     ],
     url: [
-        purev('https://www.baidu.com','url').pass,
-        purev('http://www.baidu.com','url').pass,
-        purev('xxxx','url').pass,
+        purev('https://www.baidu.com', 'url').pass,
+        purev('http://www.baidu.com', 'url').pass,
+        purev('xxxx', 'url').pass,
     ],
     decimal: [
-        purev('1.1','decimal').pass,
-        purev('0.1','decimal').pass,
-        purev('0.1a','decimal').pass,
-        purev('11','decimal').pass,
+        purev('1.1', 'decimal').pass,
+        purev('0.1', 'decimal').pass,
+        purev('0.1a', 'decimal').pass,
+        purev('11', 'decimal').pass,
     ],
     lengthOfAny: [
-        purev('123456','lengthOfAny[6]').pass,
-        purev('1234你好','lengthOfAny[6]').pass,
-        purev('12345你好','lengthOfAny[6]').pass,
+        purev('123456', 'lengthOfAny[6]').pass,
+        purev('1234你好', 'lengthOfAny[6]').pass,
+        purev('12345你好', 'lengthOfAny[6]').pass,
     ],
     phone: [
-        purev('11111111111','phone').pass,
-        purev('1234','phone').pass,
-        purev('22222222222','phone').pass,
+        purev('11111111111', 'phone').pass,
+        purev('1234', 'phone').pass,
+        purev('22222222222', 'phone').pass,
     ],
     letterStart: [
-        purev('a12','letterStart').pass,
-        purev('a121','letterStart[4]').pass,
-        purev('a121','letterStart[3, 5]').pass,
-        purev('a1212a','letterStart[3, 5]').pass,
+        purev('a12', 'letterStart').pass,
+        purev('a121', 'letterStart[4]').pass,
+        purev('a121', 'letterStart[3, 5]').pass,
+        purev('a1212a', 'letterStart[3, 5]').pass,
     ],
     range: [
-        purev('99','range[100, 200]').pass,
-        purev('123','range[100, 200]').pass,
-        purev('200','range[100, 200]').pass,
-        purev('201','range[100, 200]').pass,
+        purev('99', 'range[100, 200]').pass,
+        purev('123', 'range[100, 200]').pass,
+        purev('200', 'range[100, 200]').pass,
+        purev('201', 'range[100, 200]').pass,
     ],
     express: [
-        purev('123','express[^\\d{3,4}$]').pass,
-        purev('aaa','express[^\\d{3,4}$]').pass,
-        purev('12345','express[^\\d{3,4}$]').pass,
+        purev('123', 'express[^\\d{3,4}$]').pass,
+        purev('aaa', 'express[^\\d{3,4}$]').pass,
+        purev('12345', 'express[^\\d{3,4}$]').pass,
     ],
     withNull: [
-        purev('11111111111','phone').pass,
-        purev('','phone').pass,
-        purev('','phone null').pass,
+        purev('11111111111', 'phone').pass,
+        purev('', 'phone').pass,
+        purev('', 'phone null').pass,
     ]
 };
 ```
 
 ```js
 purev({
-    name:'theajack',
+    name: 'theajack',
     birthday: '1994-01-01',
-    email:'me@theajack.com',
-    intro:''
+    email: 'me@theajack.com',
+    intro: ''
 }, {
-    name:'notnull',
-    birthday:'date',
-    email:'email',
-    intro:'notnull'
+    name: 'notnull',
+    birthday: 'date',
+    email: 'email',
+    intro: 'notnull'
 })
 ```
 
 ```js
 purev.reg('custom', /^\d{3,4}$/);
 purev.reg('customFn', (v) => {
-    return v ==='purev' || v ==='PUREV';
+    return v === 'purev' || v === 'PUREV';
 });
 ```
 
-### 8 ts interface
+### 8 ts 接口
 
  1. IPureV
  2. ITextValidResult

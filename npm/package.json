@@ -1,0 +1,26 @@
+{
+    "name": "pure-v",
+    "version": "1.1.0",
+    "description": "A lightweight, extensible, pure js validation plugin",
+    "main": "purev.min.js",
+    "scripts": {},
+    "unpkg": "purev.min.js",
+    "jsdelivr": "purev.min.js",
+    "typings": "purev.min.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/theajack/pure-v.git"
+    },
+    "keywords": [
+        "validation",
+        "plugin",
+        "js"
+    ],
+    "author": "theajack",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/theajack/pure-v/issues"
+    },
+    "homepage": "https://theajack.gitee.io/pure-v/",
+    "dependencies": {}
+}
