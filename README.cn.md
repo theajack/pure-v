@@ -16,7 +16,7 @@
 </p>
 <h3>🚀 轻量级、可扩展的纯粹的js验证插件</h3>
 
-**[English](https://github.com/theajack/pure-v/blob/master/README.md) | [在线使用](https://theajack.gitee.io/jsbox?theme=dark&lang=html&lib=https://cdn.jsdelivr.net/npm/pure-v/purev.min.js&code=DwZwxgTglgDgLgAhBMBeARACznGIBcA9IWACYB2AdAFYikCmANlAG4SXn1yHkwC2hGAFcI9ALQtBI+i0p8oVWugB8wQuGjxlAWABQwUqwQwWYgGYB7CH1QByS9ds7dCVwnIBDPvXzAFwxDgATxh6DDh6AA84dGNTCCFGMNtyCzhyRMYnYAAjCFU85zcEHKgIOExSDyDffyFAkLD0COjYkzEEpLsqiOzC3Py9Ytz6uAtyBHGwZjAAazsWD2ZSAAoASidF5Y8IhAAxKz41HNHx5zVDFnONWDgitzBxkAskykYLAHMV4VEWFdsAEwABmBYiBAEYweDbAAaWw9ei2NZrADcQweTxe9Den2+0j+AG90cVXJ5vPhbBV6B5qB45rDiSTSuVKtV8AhbOCAJxcgAsUKhDJcJNc9D4HigjAp3gAAlSaXTZpRHnwhSLXAo4BALBSAAraj4QLzeCC2RkAXxhCCJwpFZJ8KTSGUYWRhjOKzIqVRq8J2iLdtpJYolUtswclavVmu1FNS6UyZsD5uRaMDZiE5DAcCg4wQWygpAQ6xt6uM+P+DlVqItejUNy0QA) | [更新日志](https://github.com/theajack/pure-v/blob/master/helper/version.md) | [反馈错误/缺漏](https://github.com/theajack/pure-v/issues/new) | [Gitee](https://gitee.com/theajack/pure-v)**
+**[English](https://github.com/theajack/pure-v/blob/master/README.md) | [在线使用](https://theajack.gitee.io/jsbox/?github=theajack.pure-v) | [更新日志](https://github.com/theajack/pure-v/blob/master/helper/version.md) | [反馈错误/缺漏](https://github.com/theajack/pure-v/issues/new) | [Gitee](https://gitee.com/theajack/pure-v)**
 
 ---
 
