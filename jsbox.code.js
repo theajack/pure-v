@@ -1,6 +1,7 @@
 window.jsboxCode = {
-    code: /* html*/`<script src="https://cdn.jsdelivr.net/npm/pure-v/purev.min.js"></script>
-<div pv-form='form'>
+    lib: 'https://cdn.jsdelivr.net/npm/pure-v/purev.min.js',
+    lang: 'html',
+    code: /* html*/`<div pv-form='form'>
     name:<input type="text" pv-rule='notnull'><br><br>
     birthday:<input type="text" pv-rule='date'><br><br>
     <button onclick='valid()'>validate Form</button>
@@ -22,5 +23,4 @@ window.jsboxCode = {
         purev('form');
     }
 </script>`,
-    lang: 'html'
 };
