@@ -1,9 +1,14 @@
 window.jsboxCode = {
-    code: /* html*/`<script src="https://cdn.jsdelivr.net/npm/pure-v/purev.min.js"></script>
-<div pv-form='form'>
-    name:<input type="text" pv-rule='notnull'><br><br>
-    birthday:<input type="text" pv-rule='date'><br><br>
-    <button onclick='valid()'>validate Form</button>
+    lib: 'https://cdn.jsdelivr.net/npm/pure-v/purev.min.js',
+    lang: 'html',
+    code: /* html*/`<div pv-form='form'>
+    <div class='jx-block'>
+        name: <input class='jx-input' type="text" pv-rule='notnull'>
+    </div>
+    <div class='jx-block'>
+        birthday: <input class='jx-input' type="text" pv-rule='date'>
+    </div>
+    <button class='jx-button' onclick='valid()'>validate Form</button>
 </div>
 <script>
     console.log(purev('2020-01-01','date'));
@@ -19,8 +24,7 @@ window.jsboxCode = {
         intro:'notnull'
     }));
     function valid (){
-        purev('form');
+        console.log(purev('form'));
     }
 </script>`,
-    lang: 'html'
 };
