@@ -3,10 +3,10 @@ window.jsboxCode = {
     lang: 'html',
     code: /* html*/`<div pv-form='form'>
     <div class='jx-block'>
-        name: <input class='jx-input' type="text" pv-rule='notnull'>
+        name: <input pv-name="name" pv-rule="notnull" class='jx-input'>
     </div>
     <div class='jx-block'>
-        birthday: <input class='jx-input' type="text" pv-rule='date'>
+        birthday: <input pv-name="birthday" pv-rule="date" class='jx-input'>
     </div>
     <button class='jx-button' onclick='valid()'>validate Form</button>
 </div>
